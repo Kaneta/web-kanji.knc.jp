@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>漢字拡大検索</title>
+<script type="text/javascript" language="javascript">
+        function onC() {
+        var p = location.pathname;
+        var q = document.f.k.value;
+        p = p.substring(1, p.length);
+        window.open("https://search.yahoo.co.jp/search?p="+q+p);
+        }
+        function load() {
+         var a  = location.pathname;
+         a = a.substring(1, a.length);
+         document.f.k.value = a;
+         var url = window.location.search;
+         url = url.substring(3,url.length);
+         document.f.k.value = decodeURIComponent(url);
+        }
+</script>
+</head>
+<body onLoad="load()">
+
+<form style="text-align:center;" action="" method="post"  name="f">
+<input size=8 style="text-align:center;font-size:160px;font-family:serif;" value="" type="text" name="k">
+<br /><br />
+<input style="font-size:90px" type="submit" value="検索" onclick="onC()">
+</form>
+
+</body>
+</html>
