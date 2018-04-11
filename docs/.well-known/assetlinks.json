@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "net.kaneta.bigwords",
+    "sha256_cert_fingerprints":
+    ["AC:03:64:71:17:62:59:C4:50:A2:79:20:72:06:5F:5E:81:49:80:D7:8E:67:44:35:3B:62:DB:A1:CF:4A:32:C9"]
+  }
+}]
